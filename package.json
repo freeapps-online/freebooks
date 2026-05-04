@@ -1,0 +1,16 @@
+{
+  "name": "freebooksapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @freebooksapp/web dev",
+    "build": "pnpm --filter @freebooksapp/web build",
+    "preview": "pnpm --filter @freebooksapp/web preview"
+  }
+}
